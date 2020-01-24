@@ -8,7 +8,7 @@ Eric Greene
 
 Class:
 
-- Monday - Tuesday, 9am to 5pm PDT
+- Monday - Tuesday, 9am to 5pm PST
 
 Breaks:
 
