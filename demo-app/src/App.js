@@ -2,11 +2,11 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-import { DisplayTime } from './components/DisplayTime';
+import { ItemList } from './components/ItemList';
 
 function App() {
   return (
-    <DisplayTime timeString={new Date().toUTCString()} />
+    <ItemList items={['red', 'blue']} />
   );
 }
 
