@@ -2,11 +2,13 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-import { ItemList } from './components/ItemList';
+import { ConfirmDialog } from './components/ConfirmDialog';
 
 function App() {
   return (
-    <ItemList items={['red', 'blue']} />
+    <ConfirmDialog message="Please click yes."
+      onYes={() => console.log('yes')}
+      onNo={() => console.log('no')} />
   );
 }
 

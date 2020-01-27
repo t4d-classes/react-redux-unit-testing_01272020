@@ -1,0 +1,11 @@
+.contentCenter {
+  text-align: center;
+}
+
+.noBorder {
+  border: 0;
+}
+
+.leftGap {
+  margin-left: 20px;
+}

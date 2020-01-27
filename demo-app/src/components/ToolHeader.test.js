@@ -1,9 +1,9 @@
 import React from 'react';
-import { render } from 'enzyme';
+import { render, mount } from 'enzyme';
 
 import { ToolHeader } from './ToolHeader';
 
-describe('ToolHeader Snapshot Tests', () => {
+xdescribe('ToolHeader Snapshot Tests', () => {
 
   test('ToolHeader displays Hello World', () => {
 
@@ -16,5 +16,27 @@ describe('ToolHeader Snapshot Tests', () => {
     expect(component).toMatchSnapshot();
 
   });
+
+});
+
+describe('ToolHeader DOM Tests', () => {
+
+  let component;
+  let componentDOMNode;
+  const headerText = 'Hello World!';
+
+  beforeEach(() => {
+
+    component = mount(<ToolHeader headerText={headerText} />);
+    componentDOMNode = component.find('h1');
+
+  });
+
+  test('ToolHeader displays Hello World!', () => {
+
+    expect(componentDOMNode.text()).toBe(headerText);
+
+  });
+
 
 });
