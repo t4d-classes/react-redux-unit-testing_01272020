@@ -22,8 +22,8 @@ The list of strings should passed via props.
 
 4. Modify the list by wrapping the content of each list item in a div element.
 
-```
-<li><div>red</div></li>
 ```html
+<li><div>red</div></li>
+```
 
 5. Is the snapshot test still passing? Why or why not? How do you update the snapshot?
