@@ -7,7 +7,7 @@ export const ToolHeader = ({ headerText }) => {
   // made a bug
 
   return <header>
-    <h2>{headerText}</h2>
+    <h1>{headerText}</h1>
   </header>;
 
 
