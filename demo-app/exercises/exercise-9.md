@@ -4,4 +4,4 @@ GitHub URL: [https://github.com/t4d-classes/react-redux-unit-testing_01272020](h
 
 ## Steps
 
-1. Review the Car View Row component. Add all necessary unit tests to the component. Provide at least one example of a snapshot test, DOM test and shallow test.
+1. Review the Car View Row component. Add all necessary unit tests to the component. Provide at least one example of a snapshot test, DOM test and shallow test. The DOM test and shallow test should not test the same thing.
