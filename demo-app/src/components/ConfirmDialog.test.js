@@ -6,19 +6,17 @@ import { ConfirmDialog } from './ConfirmDialog';
 describe('Confirm Dialog', () => {
 
   test("Confirm dialog default message", () => {
-    const confirmDialogHtml = render(
-      <ConfirmDialog onYes={() => null} onNo={() => null}  />
+    const componentHtml = render(
+      <div><ConfirmDialog onYes={() => null} onNo={() => null}  /></div>
     ).html();
-    const component = JSON.stringify(confirmDialogHtml);
-    expect(component).toMatchSnapshot();
+    expect(componentHtml).toMatchSnapshot();
   });
 
   test("Confirm dialog custom message", () => {
-    const confirmDialogHtml = render(
-      <ConfirmDialog message="Do you want to delete this?" onYes={() => null} onNo={() => null}  />
+    const componentHtml = render(
+      <div><ConfirmDialog message="Do you want to delete this?" onYes={() => null} onNo={() => null}  /></div>
     ).html();
-    const component = JSON.stringify(confirmDialogHtml);
-    expect(component).toMatchSnapshot();
+    expect(componentHtml).toMatchSnapshot();
   });
 
   test('Click yes button', () => {
