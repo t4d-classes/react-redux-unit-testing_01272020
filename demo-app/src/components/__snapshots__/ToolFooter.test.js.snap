@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tool Footer Component Static Rendering <ToolFooter /> renders 1`] = `"<footer><small>&#xA9; 2020 A Cool Company, Inc.. All Rights Reserved.</small></footer>"`;
