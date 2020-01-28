@@ -1,7 +1,9 @@
 import React from 'react';
 
-export const DisplayTime = ({ timeString }) => {
+import dateTimeSvc from '../services/datetime';
 
-  return <div>{timeString}</div>;
+export const DisplayTime = () => {
+
+  return <div>Current Time: {dateTimeSvc.now()}</div>
 
 };

@@ -1,18 +1,19 @@
-import React from 'react';
+import * as React from 'react';
 import { render } from 'enzyme';
 
 import { DisplayTime } from './DisplayTime';
 
-describe('DisplayTime Snapshot Tests', () => {
+jest.mock('../services/datetime');
 
-  test('DisplayTime displays Hello World', () => {
+describe('<DisplayTime /> Enzyme Static HTML', () => {
 
+  test('<DisplayTime /> renders', () => {
+    
     const componentHtml = render(
-      <div><DisplayTime timeString="Mon, 27 Jan 2020 12:18:41 GMT" /></div>
+      <div><DisplayTime /></div>
     ).html();
-
+    
     expect(componentHtml).toMatchSnapshot();
-
   });
 
 });
