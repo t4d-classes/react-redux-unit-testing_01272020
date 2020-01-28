@@ -1,7 +1,11 @@
 import React from 'react';
 
-export const ItemList = ({ items }) => {
+export const ItemList = ({ items, onDeleteItem }) => {
   return <ul>
-    {items.map( (item, index) => <li key={index}><div>{item}</div></li>)}
+    {items.map( (item) =>
+      <li key={item.id}>
+        {item.name}
+        <button type="button" onClick={() => onDeleteItem(item.id)}>X</button>
+      </li>)}
   </ul>;
 };

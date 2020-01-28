@@ -15,8 +15,8 @@ export const ConfirmDialog = ({ message, onYes, onNo }) => {
   return <form className={styles.contentCenter}>
     <p>{msg}</p>
     <fieldset className={styles.noBorder}>
-      <button type="button" onClick={onYes}>Yes</button>
-      <button type="button" onClick={onNo} className={styles.noGap}>No</button>
+      <button type="button" onClick={() => onYes(1)}>Yes</button>
+      <button type="button" onClick={() => onNo(2)} className={styles.noGap}>No</button>
     </fieldset>
   </form>
 

@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export const ToolFooter = ({ companyName }) => {
+export const ToolFooter = ({ copyrightYear, companyName }) => {
 
   return <footer>
-    <small>&copy; {new Date().getFullYear()} {companyName}. All Rights Reserved.</small>
+    <small>&copy; {copyrightYear} {companyName}. All Rights Reserved.</small>
   </footer>
 
 };
