@@ -8,4 +8,4 @@ GitHub URL: [https://github.com/t4d-classes/react-redux-unit-testing_01272020](h
 
 2. Utilize the service within the Display Time component. Remove the prop for the time value which was previously passed in.
 
-3. Update the unit test for the Dispaly Time component to use mocking for the service.
+3. Update the unit test for the Display Time component to use the mocked version for the service.
