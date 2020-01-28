@@ -1,25 +1,15 @@
 import React from 'react';
 import { render, mount } from 'enzyme';
+import { snapshotTest } from '../utils/test-helper';
 
 import { ItemList } from './ItemList';
 
-
-const testMe = (comp) => {
-  const html = render(comp).html()
-  const component = JSON.stringify(html);
-  expect(component).toMatchSnapshot();
-};
-
-const quickTest = (comp) => {
-  describe('ItemList Snapshot Tests', () => {
-    test('ItemList displays Hello World', () => {
-      testMe(comp);
-    });
-  });
-};
-
+// example of refactoring into a common function
 const colors = ['red', 'green', 'blue', 'brown', 'yellow'];
-quickTest(<ItemList items={colors} />);
+snapshotTest(
+  <ItemList items={colors} />,
+  'ItemList displays Hello World Snapshot',
+);
 
 describe('ItemList Mount Tests', () => {
   test('ItemList displays the items', () => {
